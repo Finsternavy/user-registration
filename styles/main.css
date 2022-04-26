@@ -1,0 +1,36 @@
+:root{
+
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+header.site-header{
+    background-color: rgb(50, 50, 50);
+    height: 20vh;
+    text-align: center;
+}
+.bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+.menu a{
+    color: white;
+    margin-right: 30px;
+}
+input{
+    justify-content: right;
+}
