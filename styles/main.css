@@ -31,6 +31,45 @@ body{
     color: white;
     margin-right: 30px;
 }
+.menu a:hover{
+    background-color: white;
+    color: rgb(50, 50, 50);
+}
 input{
     justify-content: right;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+main h2{
+    text-align: center;
+    margin-top: 1rem;
+}
+.form-control{
+    width: 75%;
+    display: flex;
+    justify-content:right;
+    margin-top: 1rem;
+}
+.registration-button{
+    width: 50%;
+    height: 40px;
+    margin-top: 1rem;
+    align-self: center;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-radius: 5px;
+}
+.registration-button:hover{
+    background-color: white;
+    color: rgb(50, 50, 50);
+}
+@media (min-width: 678px){
+    .form-control{
+        width: 57%;
+    }
+    .registration-button{
+        width: 30%;
+    }
 }
