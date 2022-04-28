@@ -14,6 +14,22 @@ class User{
     }
 }
 
+function isValid(user){
+    let valid = true;
+    $("input").removeClass("input-error");
+    if(user.email.length == 0){
+        $("#txtEmail").addClass("input-error");
+        valid = false;
+        console.error("Email missing!");
+    }
+    if(user.password.length == 0){
+        $("#txtPassword").addClass("input-error");
+        valid = false;
+        console.error("Password missing!");
+        return valid;
+    }
+    return valid;
+}
 function register(){
     console.log("createUser() button was clicked");
     let newUser = new User(
@@ -28,9 +44,25 @@ function register(){
         $("#txtPaymentMethod").val(),
         $("#txtFavoriteColor").val(),
     )
-    console.log(newUser);
+    if(isValid(newUser)){
+        saveUser(newUser);
+        clearInput();
+    }
+    
 }
-// display the new user on the console
+
+function clearInput(){
+    $("#txtFirstName").val("");
+    $("#txtLastName").val("");
+    $("#txtEmail").val("");
+    $("#txtPassword").val("");
+    $("#txtGender").val("");
+    $("#txtAge").val("");
+    $("#txtAddress").val("");
+    $("#txtPhoneNumber").val("");
+    $("#txtPaymentMethod").val("");
+    $("#txtFavoriteColor").val("");
+}
 
 function init(){
     console.log("Init function");

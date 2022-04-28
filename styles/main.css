@@ -80,6 +80,9 @@ main h2{
     background-color: white;
     color: rgb(50, 50, 50);
 }
+.input-error{
+    border: 1px solid red;
+}
 @media (min-width: 678px){
     .form-control{
         width: 57%;
