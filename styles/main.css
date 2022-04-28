@@ -23,6 +23,9 @@ header.site-header{
     align-items: center;
     height: 100%;
 }
+.bar h1{
+    width: 80%;
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Mono', monospace;
@@ -30,13 +33,25 @@ body{
 .menu a{
     color: white;
     margin-right: 30px;
+    padding-inline: 10px;
 }
-.menu a:hover{
-    background-color: white;
+.menu a:hover,
+.menu a:focus{
+    /* background-color: white;
     color: rgb(50, 50, 50);
+    
+    border: 1px solid gray; */
+    border-bottom: 3px solid white;
+    box-shadow: 0 0 6px black;
+    padding-inline: 10px;
+    border-radius: 5px;
+    
 }
-input{
+input,
+select{
     justify-content: right;
+    width: 200px;
+    text-align: center;
 }
 .form-container{
     display: flex;

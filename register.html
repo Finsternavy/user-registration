@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
@@ -71,7 +72,12 @@
             </div>
             <div class="form-control">
                 <label>Payment Method: </label>
-                <input type="text" id="txtPaymentMethod" placeholder="Enter your Payment Method">
+                <select name="txtPaymentMethod" id="txtPaymentMethod">
+                    <option value="">--Select a Payment Method</option>
+                    <option value="Credit">Visa</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="eCheck">eCheck</option>
+                </select>
             </div>
             <div class="form-control">
                 <label>Favorite Color: </label>
