@@ -25,6 +25,8 @@ header.site-header{
 }
 .bar h1{
     width: 80%;
+    color: white;
+    font-weight: 300;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -32,7 +34,6 @@ body{
 }
 .menu a{
     color: white;
-    margin-right: 30px;
     padding-inline: 10px;
 }
 .menu a:hover,
@@ -82,6 +83,60 @@ main h2{
 }
 .input-error{
     border: 1px solid red;
+}
+/*-------Login Page----------*/
+
+.main-container{
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8rem;
+    margin-block: 40px;
+    padding-block: 40px;
+    border: 3px solid rgb(50, 50, 50);
+    border-radius: 20px;
+    background-color: lightgray;
+}
+.login-container{
+    margin-top: 20px;
+}
+.login-email-container,
+.login-password-container{
+    display: flex;
+    justify-content: space-between;
+}
+.login-password-container{
+    margin-top: 10px;
+}
+#loginEmail,
+#loginPassword{
+    margin-left: 20px;
+    border-radius: 5px;
+    height: 40px;
+}
+.login-button-container{
+    margin-top: 40px;
+}
+.login-button-container > *{
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+.login-button-container > *:hover{
+    background-color: white;
+    color: rgb(50, 50, 50);
+}
+.login-label{
+    justify-content: right;
+    text-align: right;
+    padding-top: 10px;
+    width: 100%;
 }
 @media (min-width: 678px){
     .form-control{

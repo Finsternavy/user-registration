@@ -47,6 +47,8 @@ function register(){
     if(isValid(newUser)){
         saveUser(newUser);
         clearInput();
+        alert("You have successfully registered! Exit this window to login!");
+        document.location.href = "index.html";
     }
     
 }
