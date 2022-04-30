@@ -18,12 +18,12 @@ function isValid(user){
     let valid = true;
     $("input").removeClass("input-error");
     if(user.email.length == 0){
-        $("#txtEmail").addClass("input-error");
+        $("#invalid-check-email").addClass("input-error");
         valid = false;
         console.error("Email missing!");
     }
     if(user.password.length == 0){
-        $("#txtPassword").addClass("input-error");
+        $("#invalid-check-password").addClass("input-error");
         valid = false;
         console.error("Password missing!");
         return valid;
