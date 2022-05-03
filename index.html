@@ -39,7 +39,7 @@
         </div> -->
         <div class="main-container">
             <h2 class="login-header">Welcome to the A.U.R.S.</h2>
-            
+            <div id="alertError" class="hide">Invalid Credentials</div>
             <form class="login-container">
                 <div class="login-email-container">
                     <label class="login-label">Email:</label>
@@ -51,7 +51,7 @@
                 </div>
             </form>
             <div class="login-button-container">
-                <a class="login-button" onclick="login();" href="#">Login</a>
+                <a id="loginButton" class="login-button" href="#">Login</a>
                 <a class="login-register-button" href="register.html">Register</a>
             </div>
         </div>
@@ -63,9 +63,7 @@
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts/list.js"></script>
+    <script src="scripts/login.js"></script>
     <script src="scripts/storeManager.js"></script>
-    <script src="scripts/register.js"></script>
-    
 </body>
 </html>

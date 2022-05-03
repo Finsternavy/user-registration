@@ -6,26 +6,27 @@ function displayUsers(users){
             console.log(newUser);
             let row = `
             <tr class="table-row">
+                <td><button class="edit-button" onclick=("editRow();")>Edit</button></td>
+                <td>${newUser.id}</td>
                 <td>${newUser.firstName}</td>
                 <td>${newUser.lastName}</td>
                 <td>${newUser.email}</td>
-                <td>${newUser.password}</td>
+                <td class="hidden">${newUser.password}</td>
                 <td>${newUser.gender}</td>
                 <td>${newUser.age}</td>
                 <td>${newUser.address}</td>
                 <td>${newUser.phoneNum}</td>
                 <td>${newUser.payment}</td>
-                <td><input type="color" value="${newUser.favColor}">${newUser.favColor}</td>
+                <td><input type="color" class="color-picker" value="${newUser.favColor}">${newUser.favColor}</td>
             </tr>
         `;
         tableData.append(row);
         }
         console.log(tableData);
-    // get each user
+}
 
-    // display the users
+function editRow(){
 
-    // append the user on the html table
 }
 
 function init(){
